@@ -56,3 +56,69 @@ function playGame() {
   console.log(determineWinner(userChoice, computerChoice));
 }
 playGame();
+
+
+/* this version includes a bomb snippet as a 'cheat code'
+
+function getUserChoice () {
+  var userInput = prompt('Rock, Paper, Scissors?');
+  userInput = userInput.toLowerCase();
+  if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') {
+    return userInput;
+  } else {
+    console.log('INVALID ANSWER YOU LOSER');
+         }
+  
+}
+
+function getComputerChoice() {
+  var choice = Math.floor(Math.random()*2);
+  if (choice === 0) {
+    return 'rock';
+  } else if (choice === 1) {
+    return 'paper';
+  } else {
+    return 'scissors';
+  }
+}
+
+function determineWinner(userChoice, computerChoice) {
+  if (userChoice === 'bomb') {
+    return 'You blew the computer up!';
+  }
+  if (userChoice === computerChoice) {
+  return 'The game is a tie!';
+  }
+  if (userChoice === 'rock') {
+    if (computerChoice === 'scissors') {
+      return 'You smashed the computer!';
+    } else {
+      return 'The computer wrapped you up!';
+    }
+  }
+  if (userChoice === 'paper') {
+    if (computerChoice === 'scissors') {
+      return 'The computer sliced you open!';
+    } else {
+      return 'Wrap the computer up!';
+    }
+  }
+  if (userChoice === 'scissors') {
+    if (computerChoice === 'rock') {
+      return 'The computer rocked your world!';
+    } else {
+      return 'Cut the computer up!';
+    }
+  }
+}
+
+function playGame() {
+  var userChoice = getUserChoice();
+  var computerChoice = getComputerChoice();
+  console.log('You chose: ' + userChoice);
+  console.log('The computer chose: ' + computerChoice);
+  console.log(determineWinner(userChoice, computerChoice));
+}
+playGame();
+
+*/
