@@ -1,3 +1,4 @@
+// This code is used for rock, paper, scissors against the computer
 function getUserChoice () {
   var userInput = prompt('Rock, Paper, Scissors?');
   userInput = userInput.toLowerCase();
