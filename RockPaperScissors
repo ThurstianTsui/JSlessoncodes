@@ -5,7 +5,7 @@ function getUserChoice () {
   if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
     return userInput;
   } else {
-    console.log('INVALID ANSWER YOU LOSER');
+    console.log('INVALID ANSWER');
          }
   
 }
@@ -66,7 +66,7 @@ function getUserChoice () {
   if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') {
     return userInput;
   } else {
-    console.log('INVALID ANSWER YOU LOSER');
+    console.log('INVALID ANSWER');
          }
   
 }
